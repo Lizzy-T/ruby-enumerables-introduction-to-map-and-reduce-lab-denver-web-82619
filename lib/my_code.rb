@@ -45,6 +45,12 @@ end
 #don't forget about setting default arguments!!
 def reduce_to_total(source_array, starting_point = 0)
     #source_array.reduce(starting_point) {|sum, n| sum + n}
+    i = 0
+    sum = starting_point
+    while i < source_array do
+      sum = sum + source_array[i]
+      i +=
+    end
 end
 
 def reduce_to_all_true (source_array)
