@@ -23,7 +23,7 @@ end
 def map_to_double(source_array)
   #source_array.map { |i| i * 2  }
   i = 0
-  new_array
+  new_array = []
   while i < source_array do
     new_array.push(source_array[i] * 2)
     i+= 1
