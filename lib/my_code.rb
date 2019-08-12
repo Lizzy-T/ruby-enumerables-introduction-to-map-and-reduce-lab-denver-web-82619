@@ -24,7 +24,7 @@ def map_to_double(source_array)
   #source_array.map { |i| i * 2  }
   i = 0
   new_array = []
-  while i < source_array do
+  while i < source_array.length do
     new_array.push(source_array[i] * 2)
     i+= 1
   end
@@ -35,7 +35,7 @@ def map_to_square(source_array)
   #source_array.map { |e| e * e  }
   i = 0
   new_array = []
-  while i < source_array do
+  while i < source_array.length do
     new_array.push(source_array[i] ** 2)
     i += 1
   end
@@ -47,7 +47,7 @@ def reduce_to_total(source_array, starting_point = 0)
     #source_array.reduce(starting_point) {|sum, n| sum + n}
     i = 0
     sum = starting_point
-    while i < source_array do
+    while i < source_array.length do
       sum = sum + source_array[i]
       i += 1
     end
